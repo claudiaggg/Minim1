@@ -29,9 +29,9 @@ public class UserService {
     public UserService() {
         this.um = UsersManagerImpl.getInstance();
         if (um.size()==0) {
-            this.um.addByName("Claudia", "Biblioteca");
-            this.um.addByName("Gilbert", "Cafeteria");
-            this.um.addByName("Claudia", "Cafeteria");
+            this.um.addNewByName("Claudia", "Biblioteca");
+            this.um.addNewByName("Gilbert", "Cafeteria");
+            this.um.addNewByName("Claudia", "Cafeteria");
         }
 
 
