@@ -50,8 +50,8 @@ public class PuntoInteres {
     }
 
     public List<User> getListaOrdenaAlfabeticamente() {
-//        Collections.sort(this.visitas,
-//                (User o1, User o2) -> Double.compare(o1.getName(), o2.getName()));
+        Collections.sort(this.visitas,
+                (User o1, User o2) -> CharSequence.compare(o1.getName(), o2.getName()));
 
         return this.visitas;
 
